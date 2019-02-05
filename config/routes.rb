@@ -4,7 +4,4 @@ Rails.application.routes.draw do
   namespace :api, :defaults => {:format => :json} do
   	resources :contents, only: [:index]
   end
-
-  # setting up the root entry point here.
-  root 'welcome#index'
 end
