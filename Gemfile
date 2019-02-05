@@ -62,3 +62,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'rack-cors'
+gem 'delayed_job_active_record' # added to mark the job as published in background
+gem 'whenever', require: false  # To run jobs at a specific time
