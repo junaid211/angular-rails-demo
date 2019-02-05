@@ -5,3 +5,28 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+
+# Creation of food items status as draft
+25.times do
+	Content.create(
+		title: Faker::Food.dish,
+		published_date: Faker::Date.between(Date.today, Date.today + 60),
+		author: Faker::Name.name,
+		summary: Faker::Food.ingredient,
+		content: Faker::Food.description,
+		status: "draft"
+	)
+end
+
+# Creation of food items status as published
+25.times do
+	Content.create(
+		title: Faker::Food.dish,
+		published_date: Faker::Date.between(Date.today, Date.today + 60),
+		author: Faker::Name.name,
+		summary: Faker::Food.ingredient,
+		content: Faker::Food.description,
+		status: "published"
+	)
+end
