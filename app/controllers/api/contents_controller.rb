@@ -1,4 +1,4 @@
-class Api::ContentController < ApplicationController
+class Api::ContentsController < ApplicationController
 	def index
 		@contents = Content.select(:title, :published_date, :author, :summary, :content)
 		respond_to do |format|
