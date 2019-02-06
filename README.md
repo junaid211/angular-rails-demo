@@ -1,3 +1,5 @@
+
+
 # README
 
 The app is built in rails `5.2.2` and angular 2+.
@@ -22,3 +24,11 @@ System Dependencies:
 	- run `crontab -r`
 	- run `whenever --update-crontab --set environment='development'` to start the cron job in development environment
 
+* Running rails app
+	- `rails s`
+
+* Running front end app
+	- cd `frontend-app/client`
+	- run `npm install` 
+	- `ng serve`
+	- open the browser and write `http://localhost:4200`
