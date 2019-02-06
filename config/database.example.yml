@@ -10,13 +10,9 @@ development:
   adapter:  postgresql
   host:     localhost
   database: cms_api_development
-  username: postgres
-  password: password
 
 test:
   <<: *default
   adapter:  postgresql
   host:     localhost
   database: cms_api_test
-  username: postgres
-  password: password

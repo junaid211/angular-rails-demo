@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   providers: [HttpClient]
 })
 export class AppComponent {
-  title = 'Cms';
+  title = 'Cms Api';
   contents;
   constructor(private http: HttpClient) {
     http.get('http://localhost:3000/api/contents.json')
